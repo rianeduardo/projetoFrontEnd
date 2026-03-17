@@ -35,9 +35,10 @@ function escolherPlayer(valor) {
   imgPlayer.src = imagens[valor];
 }
 
+// Pedra → Tesoura → Papel → Pedra
 function decidirVencedor(pc, player) {
   if (pc === player) return "Empate!";
-  if ((player - pc + 3) % 3 === 1) {
+  if ((player - pc + 3) % 3 === 1) { // Ciclagem (0 = Pedra, 1 = Papel, 2 = Tesoura) 
     pontosPlayer++;
     return `${nomes[player]} vence ${nomes[pc]}! +1 ponto para o Jogador`;
   } else {
