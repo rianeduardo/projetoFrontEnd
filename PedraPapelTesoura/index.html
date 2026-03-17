@@ -1,56 +1,59 @@
 <!doctype html>
 <html lang="PT-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pedra, Papel, Tesoura</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header>
-      <div class="container-header">
-        <h1>Pedra, Papel, Tesoura</h1>
-      </div>
-    </header>
 
-    <main>
-      <div class="container-jogo">
-        <h1 id="mensagemJogo">‎</h1>
-        <div class="container-jogadores">
-          <div class="container-pc">
-            <h1>I.A</h1>
-            <div class="container-img-pc container-img">
-              <img src="papel.png" alt="" id="imgPc" />
-            </div>
-            <div class="wrapper-pontos">
-              <p>Pontos:</p>
-              <p id="pontosPc">0</p>
-            </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pedra, Papel, Tesoura JS - Somativa</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <div class="container-header">
+      <h1>Pedra, Papel, Tesoura - Rian, Daniel, Alice & Kaillany</h1>
+    </div>
+  </header>
+
+  <main>
+    <div class="container-jogo">
+      <h1 id="mensagemJogo">‎</h1>
+      <div class="container-jogadores">
+        <div class="container-pc">
+          <h1>I.A</h1>
+          <div class="container-img-pc container-img">
+            <img src="none.png" alt="" id="imgPc" />
           </div>
-          <div class="container-player">
-            <h1>Jogador</h1>
-            <div class="container-img-player container-img">
-              <img src="papel.png" alt="" id="imgPlayer" />
-            </div>
-            <div class="wrapper-pontos">
-              <p>Pontos:</p>
-              <p id="pontosPlayer">0</p>
-            </div>
+          <div class="wrapper-pontos">
+            <p>Pontos:</p>
+            <p id="pontosPc">0</p>
+          </div>
+        </div>
+        <div class="container-player">
+          <h1>Jogador</h1>
+          <div class="container-img-player container-img">
+            <img src="none.png" alt="" id="imgPlayer" />
+          </div>
+          <div class="wrapper-pontos">
+            <p>Pontos:</p>
+            <p id="pontosPlayer">0</p>
           </div>
         </div>
       </div>
-    </main>
+    </div>
+  </main>
 
-    <footer>
-      <div class="container-btns">
-        <div class="container-btn">
-          <button onclick="escolherPlayer(2)">Tesoura</button>
-          <button onclick="escolherPlayer(1)">Papel</button>
-          <button onclick="escolherPlayer(0)">Pedra</button>
-        </div>
-        <button id="comecar">Começar</button>
+  <footer>
+    <div class="container-btns">
+      <div class="container-btn">
+        <button onclick="escolherPlayer(2)">Tesoura</button>
+        <button onclick="escolherPlayer(1)">Papel</button>
+        <button onclick="escolherPlayer(0)">Pedra</button>
       </div>
-    </footer>
-  </body>
-  <script src="main.js"></script>
+      <button id="comecar">Começar</button>
+    </div>
+  </footer>
+</body>
+<script src="main.js"></script>
+
 </html>
