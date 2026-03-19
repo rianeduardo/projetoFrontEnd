@@ -18,8 +18,6 @@ btnComecar.addEventListener("click", () => {
   const escolhaPc = Math.floor(Math.random() * 3);
   imgPc.src = imagens[escolhaPc];
 
-  criarParticulas();
-
   mensagem.classList.remove("animar-texto");
   void mensagem.offsetWidth;
   mensagem.classList.add("animar-texto");
